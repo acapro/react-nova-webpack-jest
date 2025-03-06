@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {} from "react-hook-form";
+import {
+  NvButton,
+  NvFielddropdown,
+  NvFielddropdownitem,
+} from "@nova-design-system/nova-react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form className="p-8">
+      <NvFielddropdown label="Dropdown" value="1">
+        <ul slot="content">
+          <NvFielddropdownitem value="1" label="Item 1"></NvFielddropdownitem>
+          <NvFielddropdownitem value="2" label="Item 2"></NvFielddropdownitem>
+          <NvFielddropdownitem value="3" label="Item 2"></NvFielddropdownitem>
+        </ul>
+      </NvFielddropdown>
+      <NvButton disabled>Hello World</NvButton>
+    </form>
   );
 }
 
