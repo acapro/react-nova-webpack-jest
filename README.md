@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + Vitest
+# Create React App + Jest
 
 Demonstrating Nova forms with Create React App + Jest + React hook forms
 
